@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/images/Logo.png" />
   <title>Flavor Trail</title>
 </head>
 
@@ -29,7 +30,7 @@
             附近美味
           </a><span class="me-7">）</span>
 
-          <span>（</span><a href="#" class="banner-cta ">
+          <span>（</span><a href="#" class="banner-cta" data-bs-toggle="modal" data-bs-target="#shareFoodModal">
             分享美味
           </a><span>）</span>
         </div>
@@ -455,6 +456,7 @@
     <%- include('./layout/index-marquee'); -%>
     <%- include('./layout/footer'); -%>
     <%- include('layout/circle-CTA', {currentCtaTitle: '分享美味'}) %>
+    <%- include('./layout/index-ShareFood'); -%>
         <script type="module" src="../main.js"></script>
 </body>
 
