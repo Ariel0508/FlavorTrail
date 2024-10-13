@@ -422,7 +422,7 @@ $spacers: (0: 0,
   1: $spacer * .25, //4
   2: $spacer * .5, //8
   3: $spacer * 0.625, //10
-  4: $spacer * 0.75, //12
+  4: $spacer * 0.75,//12
   5: $spacer, //16
   6: $spacer * 1.25, //20
   7: $spacer * 1.5, //24
@@ -1703,7 +1703,8 @@ $breadcrumb-padding-x: 0 !default;
 $breadcrumb-item-padding-x: .5rem !default;
 $breadcrumb-margin-bottom: 1rem !default;
 $breadcrumb-bg: null !default;
-$breadcrumb-divider-color: var(--#{$prefix}secondary-color) !default;
+// $breadcrumb-divider-color: var(--#{$prefix}secondary-color) !default;
+$breadcrumb-divider-color: #000000 !default;//custom
 $breadcrumb-active-color: var(--#{$prefix}secondary-color) !default;
 $breadcrumb-divider: quote("/") !default;
 $breadcrumb-divider-flipped: $breadcrumb-divider !default;
