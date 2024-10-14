@@ -21,6 +21,13 @@ const swiper = new Swiper(".mySwiper", {
       slidesPerView: 2,
       spaceBetween: 48,
     },
+    1200: {      
+      grid: {
+        rows: 1,
+      },
+      slidesPerView: 3,
+      spaceBetween: 24,
+    }
   }
 });
 
