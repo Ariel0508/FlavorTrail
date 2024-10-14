@@ -11,6 +11,7 @@
 <%- include('./layout/header'); -%>
 <%- include('./layout/account-nav.ejs', {currentTitle: '全部通知',page: 'account-notifications'}); %>
 <div class="container">
+    <h2>全部通知</h2>
     <div class="nofify-wrap">
         <ul class="g-2 mt-2 mb-7 d-flex align-items-center gap-2 notify-menu">
             <li class="list-group-item ps-3 w-auto">
@@ -42,7 +43,7 @@
             <li class="list-group-item border-0 p-0 w-100 d-flex justify-content-between">
                 <form class="d-flex w-100">
                     <input
-                    class="form-control bg-white border-white py-4 px-5 notify-rounded "
+                    class="form-control bg-white border-white py-4 px-5 notify-rounded"
                     type="search"
                     placeholder="搜尋通知"
                     aria-label="Search"
