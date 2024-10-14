@@ -10,14 +10,24 @@
 @import './helpers/utils.scss';
 @import './base/base';
 @import './components/button.scss';
+@import './components/dropdown.scss';
 @import './components/card.scss';
 @import './components/navbar.scss';
+@import './components/marquee';
+@import './components/allnotifylist';
 @import './components/postCard.scss';
 @import './components/myFollowers.scss';
+@import './components/foodtalk';
+@import './components/timePicker.scss';
+@import './components/foodCard.scss';
+@import './components/inviteBtn.scss';
 @import './layout/header.scss';
 @import './layout/footer.scss';
-
+@import './layout/account-nav.scss';
+@import './layout/rectangle-CTA.scss';
+@import './layout/circle-CTA.scss';
 
 
 @import './pages/index.scss';
 @import './pages/allPost.scss';
+@import './pages/postPage.scss';

@@ -1,18 +1,12 @@
-$mobile-breakpoint: 767px;
-
-@mixin mobile {
-  @media (max-width: #{$mobile-breakpoint}) {
-    @content;
+.allPost {
+  .postNav {
+    @include media-breakpoint-up(lg) {
+      margin-top: 104px;
+    }
   }
-}
-
-@include mobile {
-  .mobile-full-width {
-    width: 100% !important;
-    margin-bottom: 0.5rem;
-  }
-
-  .mobile-icon {
-    font-size: 1.5rem;
+  .spinner-border {
+width: 24px;
+height: 24px;
+--bs-spinner-border-width: 2px;
   }
 }
