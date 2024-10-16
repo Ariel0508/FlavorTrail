@@ -7,17 +7,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" type="image/svg+xml" href="/FlavorTrail/assets/Logo-367dc84c.png" />
 <title>Flavor Trail - Notifications</title>
-  <script type="module" crossorigin src="/FlavorTrail/assets/marquee-92b77761.js"></script>
-  <link rel="stylesheet" href="/FlavorTrail/assets/marquee-d7bccabf.css">
+  <script type="module" crossorigin src="/FlavorTrail/assets/marquee-d75ac43a.js"></script>
+  <link rel="stylesheet" href="/FlavorTrail/assets/marquee-57aaec11.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg top-auto py-lg-0 position-fixed w-100 py-0" id="navbar">
     <div class="container">
         <!-- Logo -->
         <h1 class="fs-0">
-        <a class="navbar-brand d-flex py-lg-0 d-lg-block d-none" href="index.html">
-            <img src="/FlavorTrail/assets/Logo-navbar-de581ad4.svg" alt="logo">
-        </a>
+            <a class="navbar-brand d-flex py-lg-0 d-lg-block d-none" href="index.html">
+                <img src="/FlavorTrail/assets/Logo-navbar-de581ad4.svg" alt="logo">
+            </a>
         </h1>
 
         <!-- Toggler for mobile -->
@@ -66,7 +66,7 @@
             </div>
             <ul class="offcanvas-body navbar-nav vh-100 pt-0">
                 <li class="nav-item mb-10">
-                    <ul class="search-form d-flex gap-2">
+                    <ul class="search-form d-flex gap-2 flex-wrap">
                         <li class="input-group rounded-3 bg-white">
                             <input class="form-control search-input py-2 px-5 bg-white" type="text" name="search" placeholder="附近美味">
                             <a href="#" class="input-group-text border-0 bg-transparent py-2 ps-0 pe-5">
@@ -467,7 +467,48 @@
 <!-- 桌面版的 navbar -->
 
 <div class="container">
-    <h2 class="fw-bolder text-black mb-7 d-none d-lg-block">全部通知(這裡會換 mtt 的版本)</h2>
+    <h2 class="fw-bolder text-black mb-7 d-none d-lg-block">全部通知</h2>
+    <div class="nofify-wrap">
+        <ul class="g-2 mt-2 mb-7 d-flex align-items-center gap-2 notify-menu">
+            <li class="list-group-item ps-0 w-auto">
+                <button type="button" class="btn btn-primary py-3 px-5 text-start w-100 text-nowrap btn-sm rounded-3 d-flex justify-content-between align-items-center">
+                <span class="fs-6 pe-6 me-16">全部</span>
+                <span class="badge bg-white text-primary rounded-circle p-1 fw-medium">9+</span>
+                </button>
+            </li>
+            <li class="col-2 list-group-item border-0 p-0 w-auto">
+                <button type="button" class="btn btn-light py-3 px-5 text-start w-100 text-nowrap btn-sm rounded-3 d-flex align-items-center">
+                    <img src="../../assets/images/icon/clipboard-pen-line.svg" alt="" width="20px" height="20px">
+                    <span class="fs-6 ms-2 pe-12 text-gray-700">申請通知</span>
+                    <span class="badge bg-bedge-color text-primary rounded-circle fw-medium">7</span>
+                </button>
+            </li>
+            <li class="col-2 list-group-item border-0 p-0 w-auto">
+                <button type="button" class="btn btn-light py-3 px-5 text-start w-100 text-nowrap btn-sm rounded-3 d-flex align-items-center">
+                    <img src="../../assets/images/icon/shopping-bag.svg" alt="" width="20px" height="20px">
+                    <span class="fs-6 ms-2 pe-12 text-gray-700">領取通知</span>
+                    <span class="badge bg-bedge-color text-primary rounded-circle fw-medium">5</span>
+                </button>
+            </li>
+            <li class="list-group-item border-0 p-0 w-auto">
+                <button type="button" class="btn btn-light py-3 px-5 text-start w-100 text-nowrap btn-sm rounded-3 d-flex align-items-center">
+                    <img src="../../assets/images/icon/star.svg" alt="" width="20px" height="20px">
+                    <span class="fs-6 ms-2 pe-12 text-gray-700">評價通知</span>
+                </button>
+            </li>
+            <li class="list-group-item border-0 p-0 w-100 d-flex justify-content-between">
+                <form class="d-flex w-100">
+                    <input
+                    class="form-control bg-white border-white py-4 px-5 notify-rounded"
+                    type="search"
+                    placeholder="搜尋通知"
+                    aria-label="Search"
+                    />
+                </form>
+                <img src="../../assets/images/icon/search.svg" alt="" class="bg-white rounded-end pe-5 ">
+            </li>
+        </ul>
+    </div>
 </div>
 <section class="container px-0 notifyList">
     <ul class="row">
@@ -682,7 +723,7 @@
     <!-- 申請通知 & 回覆申請通知-->
 <div class="modal fade notify" id="notifyApplyModal" aria-hidden="true" aria-labelledby="ModalToggleLabel" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-lg">
-      <div class="modal-content">
+      <div class="modal-content bg-white">
         <div class="modal-header border-0 p-lg-7 py-7 px-4">
           <h1 class="modal-title fw-bolder lh-xs" id="ModalToggleLabel">申請通知</h1>
           <img src="/FlavorTrail/assets/x-7378c19a.svg" alt="" class="ms-auto pointer" data-bs-dismiss="modal" aria-label="Close">
@@ -706,7 +747,7 @@
   </div>
   <div class="modal fade notify" id="notifyApplyModal2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-lg">
-      <div class="modal-content">
+      <div class="modal-content bg-white">
         <div class="modal-header border-0 p-lg-7 py-7 px-4">
             <h1 class="modal-title fw-bolder lh-xs" id="ModalToggleLabel">回覆申請通知</h1>
             <img src="/FlavorTrail/assets/x-7378c19a.svg" alt="" class="ms-auto pointer" data-bs-dismiss="modal" aria-label="Close">
@@ -715,25 +756,25 @@
           <form action="/replay" method="post">
             <div class="notify mb-7 d-flex flex-column flex-lg-row gap-2 align-items-lg-center">
               <label for="InputTitle" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7">回覆標題</label>
-              <input type="text" class="form-control py-2 px-5 border-gray-400 rounded-3" id="InputTitle" placeholder="我已經準備好囉~快來領取你的食物吧!">
+              <input type="text" class="form-control py-2 px-5 border-gray-400 rounded-3 bg-white" id="InputTitle" placeholder="我已經準備好囉~快來領取你的食物吧!">
             </div>
             <div class="notify mb-7  d-flex flex-column flex-lg-row gap-2 align-items-lg-center">
               <label for="InputPhone" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7">聯絡電話</label>
-              <input type="number" class="form-control py-2 px-5 border-gray-400 rounded-3" id="InputPhone" placeholder="0912345678">
+              <input type="tel" class="form-control py-2 px-5 border-gray-400 rounded-3 bg-white" id="InputPhone" placeholder="0912345678">
             </div>
             <div class="notify mb-7  d-flex flex-column flex-lg-row gap-2 align-items-lg-center">
               <label for="pickUpCity" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7">領取地點</label>
               <div class="d-flex gap-2 col-lg-4">
-                <select id="city" name="city" class="form-select py-2 px-5 border-gray-400 rounded-3 d-inline-blok w-auto">
+                <select id="city" name="city" class="form-select py-2 px-5 border-gray-400 rounded-3 d-inline-blok w-auto bg-white">
                     <option disabled>請選擇縣市</option>
                     <option value="taipei">台北市</option>
                     <option value="newTaipei" selected >新北市</option>
                 </select>
-                <select id="district" name="district" class="form-select py-2 px-5 border-gray-400 rounded-3">
+                <select id="district" name="district" class="form-select py-2 px-5 border-gray-400 rounded-3 bg-white">
                     <option value>新店區</option>
                 </select>
               </div>
-              <input type="text" class="form-control py-2 px-5 border-gray-400 rounded-3" id="InputTitle" placeholder="玫瑰公園123號1樓">
+              <input type="text" class="form-control py-2 px-5 border-gray-400 rounded-3 bg-white" id="InputTitle" placeholder="玫瑰公園123號1樓">
             </div>
             <div class="notify mb-7  d-flex flex-column flex-lg-row gap-2 align-items-lg-center">
               <label for="InputPhone" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7">領取時間</label>
@@ -762,7 +803,7 @@
             </div>
             <div class="notify mb-7  d-flex flex-column flex-lg-row gap-2">
               <label for="replyMessage" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7 mt-lg-3">回覆訊息</label>
-              <textarea class="form-control py-2 px-5 border-gray-400 rounded-3" id="replyMessage" rows="5">嗨!感謝你對我的食物分享活動感興趣,你所預訂的食物可以領取了!</textarea>
+              <textarea class="form-control py-2 px-5 border-gray-400 rounded-3 bg-white" id="replyMessage" rows="5">嗨!感謝你對我的食物分享活動感興趣,你所預訂的食物可以領取了!</textarea>
             </div>
           </form>
         </div>
@@ -773,9 +814,21 @@
     </div>
   </div>
 <!-- 領取通知 -->
-  <div class="modal fade notify" id="notifyClaimModal" tabindex="-1" aria-labelledby="notifyModalLabel" aria-hidden="true">
+<div class="modal fade notify" id="notifyClaimModal" tabindex="-1" aria-labelledby="notifyModalLabel" aria-hidden="true">
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 5">
+      <div id="liveToast" class="toast hide bg-white" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="../../assets/images/Logo.png" class="rounded me-2" alt="logo" style="width:20px ;height:20px">
+          <strong class="me-auto">已確認領取</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          請自行連絡分享者詳細領取時間。
+        </div>
+      </div>
+    </div>
     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-lg">
-      <div class="modal-content">
+      <div class="modal-content bg-white">
         <div class="modal-header border-0 p-lg-7 py-7 px-4">
             <h1 class="modal-title fw-bolder lh-xs" id="ModalToggleLabel">領取通知</h1>
             <img src="/FlavorTrail/assets/x-7378c19a.svg" alt="" class="ms-auto pointer" data-bs-dismiss="modal" aria-label="Close">
@@ -794,18 +847,6 @@
         </div>
         <div class="modal-footer py-7">
           <button type="button" class="btn btn-primary" id="liveToastBtn">馬上領取</button>
-        </div>
-        <div class="position-fixed top-0 end-0 p-3" style="z-index: 5">
-          <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-              <img src="../../assets/images/Logo.png" class="rounded me-2" alt="logo" style="width:20px ;height:20px">
-              <strong class="me-auto">已確認領取</strong>
-              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">
-              請自行連絡分享者詳細領取時間。
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -886,7 +927,7 @@
 </footer>
 <div class="modal fade" id="shareFoodModal" tabindex="-1" aria-labelledby="shareFoodModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-xl">
-    <div class="modal-content">
+    <div class="modal-content bg-white">
         <div class="modal-header border-0 p-lg-7 py-7 px-4">
             <h1 class="modal-title fw-bolder lh-xs" id="shareFoodModalLabel">分享美味</h1>
             <img src="/FlavorTrail/assets/x-7378c19a.svg" alt="" class="ms-auto pointer" data-bs-dismiss="modal" aria-label="Close">
@@ -896,16 +937,16 @@
         <form action="/replay" method="post">
             <div class="share-food-modal mb-7 d-flex flex-column flex-lg-row gap-2 align-items-lg-center">
             <label for="InputTitle" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7">貼文標題</label>
-            <input type="text" class="form-control py-2 px-5 border-gray-400 rounded-3" id="InputTitle" placeholder="請輸入貼文標題">
+            <input type="text" class="form-control py-2 px-5 border-gray-400 rounded-3 bg-white" id="InputTitle" placeholder="請輸入貼文標題">
             </div>
-            <div class="share-food-modal mb-7  d-flex flex-column flex-lg-row gap-2 align-items-lg-center">
+            <div class="share-food-modal mb-7 d-flex flex-column flex-lg-row gap-2 align-items-lg-center">
                 <label for="InputFood" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7">食物名稱</label>
-                <input type="text" class="form-control py-2 px-5 border-gray-400 rounded-3" id="InputFood" placeholder="請輸入食物名稱">
+                <input type="text" class="form-control py-2 px-5 border-gray-400 rounded-3 bg-white" id="InputFood" placeholder="請輸入食物名稱">
             </div>
             <div class="d-flex justify-content-between">
-                <div class="share-food-modal mb-7 d-flex flex-column flex-lg-row gap-2 align-items-lg-center w-100">
-                    <label for="FoodType" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7 d-block w-auto">食物類型</label>
-                    <select id="FoodType" name="type" class="form-select py-2 px-5 border-gray-400 rounded-3">
+                <div class="share-food-modal mb-7 d-flex flex-column flex-lg-row gap-2 align-items-lg-center w-100 me-4">
+                    <label for="FoodType" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap d-block w-auto">食物類型</label>
+                    <select id="FoodType" name="type" class="form-select py-2 px-5 border-gray-400 rounded-3 ms-md-7 ms-lg-14 bg-white">
                         <option value="main" selected>主食</option>
                         <option value="dessert">甜點</option>
                         <option value="drink">飲料</option>
@@ -917,7 +958,7 @@
                 </div>
                 <div class="share-food-modal mb-7 d-flex flex-column flex-lg-row gap-2 align-items-lg-center w-100 ms-lg-7">
                     <label for="SaveMethod" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7 d-block w-auto">保存方式</label>
-                    <select id="SaveMethod" name="method" class="form-select py-2 px-5 border-gray-400 rounded-3">
+                    <select id="SaveMethod" name="method" class="form-select py-2 px-5 border-gray-400 rounded-3 bg-white">
                         <option value="normalTemperature">常溫</option>
                         <option value="refrigeration" selected >冷藏</option>
                         <option value="freezing">冷凍</option>
@@ -925,52 +966,52 @@
                 </div>
             </div>
             <div class="d-flex justify-content-between">
-                <div class="share-food-modal mb-7 d-flex flex-column flex-lg-row gap-2 align-items-lg-center w-100">
-                    <label for="FoodNum" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7 d-block w-auto">食物份數</label>
-                    <input type="number" class="form-control py-2 px-5 border-gray-400 rounded-3" id="FoodNum" placeholder="1">
+                <div class="share-food-modal mb-7 d-flex flex-column flex-lg-row gap-2 align-items-lg-center w-100 me-4">
+                    <label for="FoodNum" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap d-block w-auto">食物份數</label>
+                    <input type="number" class="form-control py-2 px-5 border-gray-400 rounded-3 ms-md-7 ms-lg-14 bg-white" id="FoodNum" placeholder="1">
                 </div>
                 <div class="share-food-modal mb-7 d-flex flex-column flex-lg-row gap-2 align-items-lg-center w-100 ms-lg-7">
                     <label for="event-date" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7 d-block w-auto">有效期限</label>
-                    <input type="date" id="event-date" name="event-date" min="2024-01-01" max="2024-12-31" class="form-control py-2 px-5 border-gray-400 rounded-3">
+                    <input type="date" id="event-date" name="event-date" min="2024-01-01" max="2024-12-31" class="form-control py-2 px-5 border-gray-400 rounded-3 bg-white">
                 </div>
             </div>
             <div class="d-flex justify-content-between">
                 <div class="share-food-modal mb-7 d-flex flex-column flex-lg-row gap-2 align-items-lg-center w-100">
                     <label for="FoodNum" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-3 d-block w-auto">是否已過期</label>
-                    <div class="form-check ms-0">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">是</label>
-                    </div>
-                    <div class="form-check ms-7">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">否</label>
-                    </div>
+                        <div class="form-check ms-0 align-items-center ms-md-7 ms-lg-7">
+                            <input class="form-check-input" type="radio" name="overfood" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">是</label>
+                        </div>
+                        <div class="form-check ms-lg-7">
+                            <input class="form-check-input" type="radio" name="overfood" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">否</label>
+                        </div>
                 </div>
-                <div class="share-food-modal mb-7 d-flex flex-column flex-lg-row gap-2 align-items-lg-center w-100 ms-lg-8">
+                <div class="share-food-modal mb-7 d-flex flex-column flex-lg-row gap-2 align-items-lg-center w-100 ms-lg-8 ms-7">
                     <label for="FoodNum" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-5 d-block w-auto">葷食/素食</label>
                     <div class="form-check ms-0">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                         <label class="form-check-label" for="flexRadioDefault1">葷食</label>
                     </div>
-                    <div class="form-check ms-7">
+                    <div class="form-check ms-lg-7">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">素食</label>
+                        <label class="form-check-label" for="flexRadioDefault1">素食</label>
                     </div>
                 </div>
             </div>
             <div class="share-food-modal mb-7  d-flex flex-column flex-lg-row gap-2 align-items-lg-center">
               <label for="pickUpCity" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7">領取地點</label>
               <div class="d-flex gap-2 col-lg-4">
-                <select id="city" name="city" class="form-select py-2 px-5 border-gray-400 rounded-3 d-inline-blok w-auto">
+                <select id="city" name="city" class="form-select py-2 px-5 border-gray-400 rounded-3 d-inline-blok w-100 bg-white">
                     <option disabled>請選擇縣市</option>
                     <option value="taipei">台北市</option>
                     <option value="newTaipei" selected >新北市</option>
                 </select>
-                <select id="district" name="district" class="form-select py-2 px-5 border-gray-400 rounded-3">
+                <select id="district" name="district" class="form-select py-2 px-5 border-gray-400 rounded-3 w-100 bg-white">
                     <option value>新店區</option>
                 </select>
               </div>
-              <input type="text" class="form-control py-2 px-5 border-gray-400 rounded-3" id="InputTitle" placeholder="玫瑰公園123號1樓">
+              <input type="text" class="form-control py-2 px-5 border-gray-400 rounded-3 bg-white" id="InputTitle" placeholder="玫瑰公園123號1樓">
             </div>
             <div class="share-food-modal mb-7  d-flex flex-column flex-lg-row gap-2 align-items-lg-center">
                 <label for="InputPhone" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7">領取時間</label>
@@ -999,11 +1040,11 @@
             </div>
             <div class="share-food-modal mb-7  d-flex flex-column flex-lg-row gap-2 align-items-lg-center">
                 <label for="InputFood" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7">上傳圖片</label>
-                <input type="file" class="form-control py-2 px-5 border-gray-400 rounded-3" id="InputFood" placeholder="請輸入食物名稱">
+                <input type="file" class="form-control bg-white py-2 px-5 border-gray-400 rounded-3" id="InputFood" placeholder="請輸入食物名稱">
             </div>
             <div class="share-food-modal mb-7 d-flex flex-column flex-lg-row gap-2">
                 <label for="replyMessage" class="form-label h6 fw-bold text-gray-700 col-lg-1 text-nowrap me-lg-7 mt-lg-3">介紹與描述</label>
-                <textarea class="form-control py-2 px-5 border-gray-400 rounded-3" id="replyMessage" rows="5" placeholder="備註與細節說明"></textarea>
+                <textarea class="form-control py-2 px-5 border-gray-400 rounded-3 bg-white" id="replyMessage" rows="5" placeholder="備註與細節說明"></textarea>
             </div>
         </form>
         </div>
