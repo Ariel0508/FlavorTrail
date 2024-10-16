@@ -47,7 +47,29 @@
         }
     }
 
-    .notificationCard {
+ .account-posts {
+    .bg-bedge-color {
+        background-color: rgba(0, 80, 63, 0.08);
+    }
+    
+    .posts-wrap {
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        &::-webkit-scrollbar {
+            display: none;
+          }
+        @include media-breakpoint-up(lg) {
+            overflow-x: hidden;
+        }
+    }
+    
+    .posts-rounded {
+        border-radius: 8px 0 0 8px;
+    }
+ }   
+
+.notificationCard {
         .multiline-ellipsis { 
             overflow: hidden;
             text-overflow: ellipsis;
@@ -93,4 +115,9 @@
             }
         }
     }
+    .spinner-border {
+        width: 24px;
+        height: 24px;
+        --bs-spinner-border-width: 2px;
+          }
     }
