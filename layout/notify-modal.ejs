@@ -92,7 +92,19 @@
     </div>
   </div>
 <!-- 領取通知 -->
-  <div class="modal fade notify" id="notifyClaimModal" tabindex="-1" aria-labelledby="notifyModalLabel" aria-hidden="true">
+<div class="modal fade notify" id="notifyClaimModal" tabindex="-1" aria-labelledby="notifyModalLabel" aria-hidden="true">
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 5">
+      <div id="liveToast" class="toast hide bg-white" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="../../assets/images/Logo.png" class="rounded me-2" alt="logo" style="width:20px ;height:20px">
+          <strong class="me-auto">已確認領取</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          請自行連絡分享者詳細領取時間。
+        </div>
+      </div>
+    </div>
     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-lg">
       <div class="modal-content bg-white">
         <div class="modal-header border-0 p-lg-7 py-7 px-4">
@@ -113,18 +125,6 @@
         </div>
         <div class="modal-footer py-7">
           <button type="button" class="btn btn-primary" id="liveToastBtn">馬上領取</button>
-        </div>
-        <div class="position-fixed top-0 end-0 p-3" style="z-index: 5">
-          <div id="liveToast" class="toast hide bg-white" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-              <img src="../../assets/images/Logo.png" class="rounded me-2" alt="logo" style="width:20px ;height:20px">
-              <strong class="me-auto">已確認領取</strong>
-              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">
-              請自行連絡分享者詳細領取時間。
-            </div>
-          </div>
         </div>
       </div>
     </div>
