@@ -1,6 +1,11 @@
 .breadcrumb-item + .breadcrumb-item::before {
   padding-right: 16px;
 }
+.nav-mt {
+  @include media-breakpoint-up(lg) {
+    margin-top: 104px;
+  }
+}
 .post-page {
     .floating-btn {
         position: fixed;
