@@ -23,6 +23,7 @@
 @import './layout/header.scss';
 @import './layout/footer.scss';
 @import './layout/account-nav.scss';
+@import './layout/account-setting.scss';
 @import './layout/rectangle-CTA.scss';
 @import './layout/circle-CTA.scss';
 
@@ -31,5 +32,5 @@
 @import './pages/allPost.scss';
 @import './pages/postPage.scss';
 @import './pages/event.scss';
-@import './pages/account-notification'; //TODO: 等其他頁面都完成後再搬移
+@import './pages/account-notification';
 @import './pages/login.scss';
