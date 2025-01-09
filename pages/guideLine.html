@@ -9,7 +9,11 @@
 </head>
 
 <body>
-  <section class="contact overflow-hidden">
+  <header>
+    <%- include('./layout/header'); -%>
+  </header>
+  <!-- 先加上 nav-mt 避免 nav 覆蓋到 section -->
+  <section class="contact overflow-hidden nav-mt">
     <div class="contact-info bg-white row row-lg-cols-3 d-flex flex-column flex-lg-row text-deco-green">
       <div class="col contact-info-item">
         <div
@@ -117,6 +121,11 @@
     </div>
     </div>
   </section>
+  <!--頁尾區-->
+  <%- include('layout/footer') %>
+    <div class="d-lg-none">
+      <%- include('./layout/header'); %>
+    </div>
   <script type="module" src="../main.js"></script>
 </body>
 
