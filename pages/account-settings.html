@@ -12,7 +12,10 @@
   <%- include('./layout/header'); -%>
   <%- include('./layout/account-nav.ejs', {currentTitle: '個人設定',page: 'account-settings'}); %>
   <div class="container">
-    <h2 class="fw-bolder text-black mb-7 d-none d-lg-block">個人設定頁面</h2>
+    <h2 class="fw-bolder text-black mb-7 d-none d-lg-block">個人設定</h2>
+    <div class="row flex-sm-row-reverse">
+      <%- include('./layout/account-setting'); -%>
+    </div>
   </div>
 
   <%- include('./layout/footer'); -%>
