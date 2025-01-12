@@ -59,7 +59,11 @@
         .tips-list {
             position: absolute;
             top: 250px;
+            padding-top: 40px;
+            padding-bottom: 40px;
             @include media-breakpoint-up(lg) {
+                padding-top: 32px;
+                padding-bottom: 100px;
                 margin-inline: auto;
                 width: 75%;
                 top: 50%;
