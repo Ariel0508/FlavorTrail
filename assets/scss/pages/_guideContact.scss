@@ -25,6 +25,7 @@
     line-height: 64px;
     letter-spacing: -2.56px;
     top: 84px;
+    z-index: 1;
     @include media-breakpoint-up(lg) {
       top: -168px;
     }
@@ -32,6 +33,7 @@
     .guide-contact-img  {
       height: 231px;
       width: 100%;
+      filter: brightness(0.9);
       @include media-breakpoint-up(lg) {
         height: 416px;
       }
@@ -60,7 +62,7 @@
         position: relative;
         width: 40%; 
         @include media-breakpoint-up(xxl) {
-          width: 55%; 
+          width: 65%; 
         } 
         height: 2px; 
         background-color: $deco-bright-green;
