@@ -1,4 +1,5 @@
 .account-nav {
+    z-index: 98;
     margin-top: 32px;
     background: #eee;
     @include media-breakpoint-up(lg) {

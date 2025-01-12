@@ -30,3 +30,19 @@ const swiper = new Swiper(".mySwiper", {
     }
   }
 });
+
+const postSwiper = new Swiper(".postSwiper", {
+    spaceBetween: 24,
+    slidesPerView: 1,
+    pagination: {
+      el: ".swiper-pagination-post",
+      type: "fraction"
+    },
+    1200: {      
+      grid: {
+        rows: 1,
+      },
+      slidesPerView: 3,
+      spaceBetween: 24,
+    }
+});

@@ -23,11 +23,14 @@
 @import './layout/header.scss';
 @import './layout/footer.scss';
 @import './layout/account-nav.scss';
+@import './layout/account-setting.scss';
 @import './layout/rectangle-CTA.scss';
 @import './layout/circle-CTA.scss';
 
+
 @import './pages/index.scss';
+@import './pages/allPost.scss';
+@import './pages/postPage.scss';
 @import './pages/event.scss';
-
-
-
+@import './pages/account-notification';
+@import './pages/login.scss';

@@ -20,7 +20,7 @@ ScrollTrigger.create({
     start: 'top top',
     end: 'bottom bottom',
     onUpdate: (self) => {
-        if (scrollY >= 2160) {
+        if (scrollY >= 1080) {
             gsap.to(ctaButton, {
                 position: 'fixed',
                 opacity: 1,
