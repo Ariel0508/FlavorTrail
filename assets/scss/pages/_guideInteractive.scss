@@ -1,0 +1,38 @@
+.interactive-title-ch {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 105px;
+    height: 118px;
+    background-image: url("/assets/images/deco/guide-pen.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 200px;
+    transform: translateY(-100%);
+  }
+
+  @include media-breakpoint-up(md) {
+    &::after {
+      width: 133px;
+      height: 150px;
+      left: 250px;
+    }
+  }
+}
+
+.interactive-item {
+  padding-block: map-get($spacers, 7);
+  .tips-deco {
+    width: 24px;
+    height: 4px;
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding: 0 24px;
+  }
+}
