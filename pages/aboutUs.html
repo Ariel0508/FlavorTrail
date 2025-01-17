@@ -25,6 +25,36 @@
           </div>
           <%- include('./layout/rectangle-CTA', {currentCtaRectangleTitle: '我要領取' , page: 'postPage' }) %>
             <script type="module" src="../main.js"></script>
+            <script type="module">
+              import { Collapse } from 'bootstrap';
+
+              const shareCollapse = new Collapse('#shareCollapse', {
+                toggle: false
+              });
+              const discoverCollapse = new Collapse('#discoverCollapse', {
+                toggle: false
+              });
+              const connectCollapse = new Collapse('#connectCollapse', {
+                toggle: false
+              });
+              const aboutService = document.querySelector('.aboutService');
+              aboutService.addEventListener('click', (e) => {
+                // let targetMarquee = e.target.closest('.marquee');
+                let targetCollapse = e.target.closest('.marquee').dataset.collapse;
+                switch (targetCollapse) {
+                  case 'shareCollapse':
+                    shareCollapse.toggle();
+                    break;
+                  case 'discoverCollapse':
+                    discoverCollapse.toggle();
+                    break;
+                  case 'connectCollapse':
+                    connectCollapse.toggle();
+                    break;
+                }
+              })
+
+            </script>
 </body>
 
 </html>

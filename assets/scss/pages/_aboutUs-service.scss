@@ -1,0 +1,12 @@
+.aboutService {
+  color: $white;
+  background-color: $primary;
+  font-size: map-get($font-sizes, 5);
+  line-height: $line-height-base;
+  font-weight: $font-weight-medium;
+  border-top: 4px solid $white;
+
+  .aboutService-title {
+    letter-spacing: -0.04rem;
+  }
+}
