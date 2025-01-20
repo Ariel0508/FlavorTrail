@@ -4,11 +4,11 @@
     <div class="modal-content bg-white">
       <div class="modal-header border-0 p-lg-7 py-7 px-4">
         <h1 class="modal-title fw-bolder lh-xs" id="ModalToggleLabel">申請通知</h1>
-        <img src="../assets/images/icon/x.svg" alt="" class="ms-auto pointer" data-bs-dismiss="modal" aria-label="Close">
+        <img src="../assets/images/icon/x.svg" alt="" class="ms-auto pointer p-2" data-bs-dismiss="modal" aria-label="Close">
       </div>
       <div class="modal-body p-lg-7 py-7 px-4">
         <a href="#" alt="" class="d-block mb-7">
-          <div class="d-flex justify-content-between align-items-center alert alert-secondary p-1">
+          <div class="d-flex justify-content-between align-items-center alert alert-secondary p-1 border-0">
             <div class="d-flex align-items-center">
               <img src="../assets/images/post-1.jpg" alt="" class="nofify-modal-img rounded-1">
               <h5 class="fw-bold ps-5 text-nowrap overflow-hidden text-overflow pe-2">奢華午餐，尋找飢餓的你！</h5>
@@ -29,7 +29,7 @@
               聯絡電話：0912345678<br>
               我將在 14:00 時準時抵達</p>
       </div>
-      <div class="modal-footer py-7">
+      <div class="modal-footer py-7 p-lg-7">
           <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">拒絕</button>
           <button class="btn btn-primary" data-bs-target="#notifyApplyModal2" data-bs-toggle="modal" data-bs-dismiss="modal">同意</button>
       </div>
@@ -41,7 +41,7 @@
     <div class="modal-content">
       <div class="modal-header border-0 p-lg-7 py-7 px-4">
           <h1 class="modal-title fw-bolder lh-xs" id="ModalToggleLabel">回覆申請通知</h1>
-          <img src="../assets/images/icon/x.svg" alt="" class="ms-auto pointer" data-bs-dismiss="modal" aria-label="Close">
+          <img src="../assets/images/icon/x.svg" alt="" class="ms-auto pointer p-2" data-bs-dismiss="modal" aria-label="Close">
       </div>
       <div class="modal-body p-lg-7">
         <form action="/replay" method="post">
@@ -98,7 +98,7 @@
           </div>
         </form>
       </div>
-      <div class="modal-footer py-7">
+      <div class="modal-footer p-7 p-lg-7">
         <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">送出</button>
       </div>
     </div>
@@ -110,11 +110,11 @@
     <div class="modal-content bg-white">
       <div class="modal-header border-0 p-lg-7 py-7 px-4">
           <h1 class="modal-title fw-bolder lh-xs" id="ModalToggleLabel">領取通知</h1>
-          <img src="../assets/images/icon/x.svg" alt="" class="ms-auto pointer" data-bs-dismiss="modal" aria-label="Close">
+          <img src="../assets/images/icon/x.svg" alt="" class="ms-auto pointer p-2" data-bs-dismiss="modal" aria-label="Close">
         </div>
         <div class="modal-body p-lg-7 py-7 px-4">
           <a href="#" alt="" class="d-block mb-7">
-            <div class="d-flex justify-content-between align-items-center alert alert-secondary p-1">
+            <div class="d-flex justify-content-between align-items-center alert alert-secondary p-1 border-0">
               <div class="d-flex align-items-center">
                 <img src="../assets/images/post-1.jpg" alt="" class="nofify-modal-img rounded-1">
                 <h5 class="fw-bold ps-5 text-nowrap overflow-hidden text-overflow pe-2">奢華午餐，尋找飢餓的你！</h5>
@@ -138,16 +138,18 @@
               請記得帶上你的環保餐具，享受這美味的食物！如果有任何問題，請隨時聯繫我～～</p>
       </div>
       <!-- 電腦版 - 馬上領取 -->
-      <div class="modal-footer py-7 d-none d-sm-block">
+      <div class="modal-footer p-7 d-sm-block d-none">
         <div class="d-flex justify-content-between">
           <button type="button" class="btn btn-white" id="giveUpBtn">放棄領取</button>
           <div class="d-flex">
-            <input type="text" class="form-control py-4 px-5 border-gray-400 rounded-3 bg-white lh-account me-2" id="getCodePC" placeholder="輸入領取號碼">
-            <button type="button" class="btn btn-primary text-nowrap" id="orderNowPC" data-bs-dismiss="modal" disabled>馬上領取</button>
+            <div class="me-2">
+              <input type="text" class="form-control-sm form-control p-5 border-gray-400 rounded-3 bg-white lh-account" id="getCodePC" placeholder="請輸入領取碼">
+              <div id="passwordHelpBlock" class="form-text text-start ps-1">
+                請向發文者索取領取碼
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary text-nowrap py-4" id="orderNowPC" data-bs-dismiss="modal" disabled>馬上領取</button>
           </div>
-        </div>
-        <div id="passwordHelpBlock" class="form-text ms-1 text-end">
-          請向發文者索取領取碼
         </div>
       </div>
       <!-- 手機版 - 馬上領取 -->
