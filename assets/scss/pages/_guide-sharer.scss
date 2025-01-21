@@ -1,16 +1,41 @@
 .guide-sharer {
+    .bg-section {
+        background-color: $deco-green;
+    }
+
     .active {
         .btn-share {
-            color: #576E22;
+            color: $deco-green;
         }
 
         .btn-getfood {
-            color: #0000C2;
+            color: $deco-blue;
         }
+
+    }
+
+    .letter-space {
+        letter-spacing: -0.04em;
     }
 
     ol {
         list-style-type: decimal;
         padding: 0 24px;
     }
+
+    @include media-breakpoint-up(lg) {
+        .sharer-lg-lists {
+            padding-top: 340px;
+        }
+
+        .text-lg-wrap:before {
+            content: '';
+            display: block;
+        }
+
+        .fw-lg-medium {
+            font-weight: 500;
+        }
+    }
+
 }
