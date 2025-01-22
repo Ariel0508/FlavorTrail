@@ -29,6 +29,10 @@
         margin-top: 96px;
     }
 }
+.deco-face-pc {
+  margin-top: 145px;
+  margin-bottom: 92px;
+}
 .our-team-sm-btn {
     color: $gray-900;
     &:hover {
@@ -70,6 +74,7 @@
   }
   .our-team-lg-btn {
     .our-team-btn {
+      line-height: 1.2;
       &:hover {
         text-decoration: underline;
       }
