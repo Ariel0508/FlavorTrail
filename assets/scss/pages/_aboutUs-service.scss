@@ -1,4 +1,16 @@
 .aboutService {
+  svg {
+    height: 64px;
+    width: auto;
+    vertical-align: bottom;
+    padding-top: 5px;
+    margin-left: map-get($spacers, 7);
+    margin-right: map-get($spacers, 7);
+    @include media-breakpoint-up(md) {
+      height: 80px;
+    }
+  }
+
   &-content {
     color: $white;
     background-color: $primary;
@@ -39,9 +51,12 @@
     }
   }
 
-  &-title {
-    letter-spacing: -0.04rem;
+  &-title,
+  &-marquee-text {
+    letter-spacing: -0.04em;
+  }
 
+  &-title {
     @include media-breakpoint-up(lg) {
       display: none;
       &.wrapTitle {
@@ -76,7 +91,7 @@
       }
     }
   }
-
+  //內容文字因排版調整區分aboutService-text與aboutService-text2 不會命名啊QQ
   &-text {
     display: none;
 
