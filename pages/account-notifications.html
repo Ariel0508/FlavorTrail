@@ -41,16 +41,18 @@
                     <span class="fs-6 ms-2 pe-12 text-gray-700">評價通知</span>
                 </button>
             </li>
-            <li class="list-group-item border-0 p-0 w-100 d-flex justify-content-between">
-                <form class="d-flex w-100">
+            <li class="list-group-item p-0 w-100 d-flex justify-content-between">
+                <form class="d-flex w-100 position-relative notify-rounded">
+                    <label for="search"></label>
                     <input
-                    class="form-control bg-white border-white py-4 px-5 notify-rounded"
+                    id="search"
+                    class="form-control bg-white border-white py-4 px-5"
                     type="search"
                     placeholder="搜尋通知"
                     aria-label="Search"
                     />
+                    <img src="../assets/images/icon/search.svg" style="width: 16px; height: 16px" alt="" class="bg-white rounded-end position-absolute top-50 end-0 translate-middle-y me-2 me-lg-5">
                 </form>
-                <img src="../assets/images/icon/search.svg" alt="" class="bg-white rounded-end pe-5 ">
             </li>
         </ul>
     </div>
