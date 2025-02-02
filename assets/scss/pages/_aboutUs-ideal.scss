@@ -53,6 +53,16 @@
             left: 75%;
         }
     }
+    .ideal-banner-deco-noise {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('/assets/images/Noise.png') no-repeat;
+        opacity: .5;
+        mix-blend-mode: soft-light;
+    }
     .ideal-banner-deco {
         position: absolute;
         top: 68%;
