@@ -565,115 +565,115 @@
       <div class="d-lg-none">
         <%- include('./layout/header'); %>
       </div>
-      <%- include('./layout/rectangle-CTA', {currentCtaRectangleTitle: '我要領取' , page: 'postPage' }) %>
-        <script type="module" src="../main.js"></script>
-        <script type="module">
-          import { Collapse } from 'bootstrap';
 
-          const shareCollapse = new Collapse('#shareCollapse', {
-            toggle: false
-          });
-          const discoverCollapse = new Collapse('#discoverCollapse', {
-            toggle: false
-          });
-          const connectCollapse = new Collapse('#connectCollapse', {
-            toggle: false
-          });
-          const aboutService = document.querySelector('.aboutService');
-          aboutService.addEventListener('click', (e) => {
-            // let targetMarquee = e.target.closest('.marquee');
-            let targetCollapse = e.target.closest('.marquee').dataset.collapse;
-            switch (targetCollapse) {
-              case 'shareCollapse':
-                shareCollapse.toggle();
-                break;
-              case 'discoverCollapse':
-                discoverCollapse.toggle();
-                break;
-              case 'connectCollapse':
-                connectCollapse.toggle();
-                break;
-            }
-          })
+      <script type="module" src="../main.js"></script>
+      <script type="module">
+        import { Collapse } from 'bootstrap';
 
-        </script>
-        <script type="module">
-          import { gsap } from 'gsap';
-          const aboutShare = document.querySelector('#aboutShare');
-          const aboutDiscover = document.querySelector('#aboutDiscover');
-          const aboutConnect = document.querySelector('#aboutConnect')
-          const aboutShareTimeline = gsap.timeline();
-          const aboutDiscoverTimeline = gsap.timeline();
-          const aboutConnectTimeline = gsap.timeline();
-          let primaryColor = '#00503F';
-          let whiteColor = '#FFFFFF';
-
-          const slideInAnimation = (target, element, timeline) => {
-            timeline.clear();
-            timeline.to(element, {
-              backgroundColor: primaryColor,
-              borderColor: whiteColor
-            });
-
-            timeline.to(target.children[4], {
-              duration: .3,
-              x: 0,
-              ease: "elastic.out(1,1)"
-            }, '-=.1');
-            timeline.to(target.children[5], {
-              duration: .3,
-              xPercent: -100,
-              ease: "elastic.out(1,1)"
-            }, '-=.4')
-
-          };
-
-          const slideOutAnimation = (target, element, timeline) => {
-            timeline.clear();
-            timeline.to(target.children[4], {
-              duration: .3,
-              x: -400,
-              ease: "power3.out"
-            }, '0');
-            timeline.to(target.children[5], {
-              duration: .3,
-              xPercent: 0,
-              ease: "power3.out"
-            }, '0')
-
-            timeline.to(element, {
-              duration: .2,
-              backgroundColor: whiteColor,
-              borderColor: primaryColor
-            })
+        const shareCollapse = new Collapse('#shareCollapse', {
+          toggle: false
+        });
+        const discoverCollapse = new Collapse('#discoverCollapse', {
+          toggle: false
+        });
+        const connectCollapse = new Collapse('#connectCollapse', {
+          toggle: false
+        });
+        const aboutService = document.querySelector('.aboutService');
+        aboutService.addEventListener('click', (e) => {
+          // let targetMarquee = e.target.closest('.marquee');
+          let targetCollapse = e.target.closest('.marquee').dataset.collapse;
+          switch (targetCollapse) {
+            case 'shareCollapse':
+              shareCollapse.toggle();
+              break;
+            case 'discoverCollapse':
+              discoverCollapse.toggle();
+              break;
+            case 'connectCollapse':
+              connectCollapse.toggle();
+              break;
           }
+        })
 
-          aboutShare.addEventListener('mouseover', (e) => {
-            let targetMarquee = e.target.closest('.aboutService-marquee-desktop');
-            slideInAnimation(aboutShare, targetMarquee, aboutShareTimeline);
-          })
-          aboutShare.addEventListener('mouseleave', (e) => {
-            let targetMarquee = e.target.closest('.aboutService-marquee-desktop');
-            slideOutAnimation(aboutShare, targetMarquee, aboutShareTimeline);
-          })
-          aboutDiscover.addEventListener('mouseover', (e) => {
-            let targetMarquee = e.target.closest('.aboutService-marquee-desktop');
-            slideInAnimation(aboutDiscover, targetMarquee, aboutDiscoverTimeline);
-          })
-          aboutDiscover.addEventListener('mouseleave', (e) => {
-            let targetMarquee = e.target.closest('.aboutService-marquee-desktop');
-            slideOutAnimation(aboutDiscover, targetMarquee, aboutDiscoverTimeline);
-          })
-          aboutConnect.addEventListener('mouseover', (e) => {
-            let targetMarquee = e.target.closest('.aboutService-marquee-desktop');
-            slideInAnimation(aboutConnect, targetMarquee, aboutConnectTimeline);
-          })
-          aboutConnect.addEventListener('mouseleave', (e) => {
-            let targetMarquee = e.target.closest('.aboutService-marquee-desktop');
-            slideOutAnimation(aboutConnect, targetMarquee, aboutConnectTimeline);
-          })
+      </script>
+      <script type="module">
+        import { gsap } from 'gsap';
+        const aboutShare = document.querySelector('#aboutShare');
+        const aboutDiscover = document.querySelector('#aboutDiscover');
+        const aboutConnect = document.querySelector('#aboutConnect')
+        const aboutShareTimeline = gsap.timeline();
+        const aboutDiscoverTimeline = gsap.timeline();
+        const aboutConnectTimeline = gsap.timeline();
+        let primaryColor = '#00503F';
+        let whiteColor = '#FFFFFF';
 
-        </script>
+        const slideInAnimation = (target, element, timeline) => {
+          timeline.clear();
+          timeline.to(element, {
+            backgroundColor: primaryColor,
+            borderColor: whiteColor
+          });
+
+          timeline.to(target.children[4], {
+            duration: .3,
+            x: 0,
+            ease: "elastic.out(1,1)"
+          }, '-=.1');
+          timeline.to(target.children[5], {
+            duration: .3,
+            xPercent: -100,
+            ease: "elastic.out(1,1)"
+          }, '-=.4')
+
+        };
+
+        const slideOutAnimation = (target, element, timeline) => {
+          timeline.clear();
+          timeline.to(target.children[4], {
+            duration: .3,
+            x: -400,
+            ease: "power3.out"
+          }, '0');
+          timeline.to(target.children[5], {
+            duration: .3,
+            xPercent: 0,
+            ease: "power3.out"
+          }, '0')
+
+          timeline.to(element, {
+            duration: .2,
+            backgroundColor: whiteColor,
+            borderColor: primaryColor
+          })
+        }
+
+        aboutShare.addEventListener('mouseover', (e) => {
+          let targetMarquee = e.target.closest('.aboutService-marquee-desktop');
+          slideInAnimation(aboutShare, targetMarquee, aboutShareTimeline);
+        })
+        aboutShare.addEventListener('mouseleave', (e) => {
+          let targetMarquee = e.target.closest('.aboutService-marquee-desktop');
+          slideOutAnimation(aboutShare, targetMarquee, aboutShareTimeline);
+        })
+        aboutDiscover.addEventListener('mouseover', (e) => {
+          let targetMarquee = e.target.closest('.aboutService-marquee-desktop');
+          slideInAnimation(aboutDiscover, targetMarquee, aboutDiscoverTimeline);
+        })
+        aboutDiscover.addEventListener('mouseleave', (e) => {
+          let targetMarquee = e.target.closest('.aboutService-marquee-desktop');
+          slideOutAnimation(aboutDiscover, targetMarquee, aboutDiscoverTimeline);
+        })
+        aboutConnect.addEventListener('mouseover', (e) => {
+          let targetMarquee = e.target.closest('.aboutService-marquee-desktop');
+          slideInAnimation(aboutConnect, targetMarquee, aboutConnectTimeline);
+        })
+        aboutConnect.addEventListener('mouseleave', (e) => {
+          let targetMarquee = e.target.closest('.aboutService-marquee-desktop');
+          slideOutAnimation(aboutConnect, targetMarquee, aboutConnectTimeline);
+        })
+
+      </script>
 </body>
 
 </html>
