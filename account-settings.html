@@ -7,9 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="/FlavorTrail/assets/Logo-367dc84c.png" />
   <title>Flavor Trail - Settings</title>
-  <script type="module" crossorigin src="/FlavorTrail/assets/marquee-c6dad764.js"></script>
-  <link rel="stylesheet" href="/FlavorTrail/assets/marquee-569bd900.css">
+  <script type="module" crossorigin src="/FlavorTrail/assets/account-settings-6a9d4f8c.js"></script>
+  <link rel="modulepreload" crossorigin href="/FlavorTrail/assets/marquee-723ef7ff.js">
+  <link rel="stylesheet" href="/FlavorTrail/assets/marquee-77c38097.css">
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg top-auto py-lg-0 position-fixed w-100 py-0" id="navbar">
     <div class="container">
@@ -312,7 +314,7 @@
     });
 
     
-</script>  <nav class="account-nav navbar navbar-expand-lg">
+</script>    <nav class="account-nav navbar navbar-expand-lg">
     <div class="container">
       <!-- 桌面版的 navbar -->
       <ul class="navbar-nav d-lg-flex d-none justify-content-between mb-14">
@@ -466,11 +468,123 @@
 <!-- 手機版的下拉選單 -->
 <!-- 桌面版的 navbar -->
 
-  <div class="container">
-    <h2 class="fw-bolder text-black mb-7 d-none d-lg-block">個人設定頁面</h2>
-  </div>
+      <div class="container">
+        <h2 class="fw-bolder text-black mb-7 d-none d-lg-block">個人設定</h2>
+        <div class="row flex-sm-row-reverse mb-19">
+          <div class="col-sm-3 mb-2">
+    <div class="bg-white rounded-3 text-center d-flex flex-column py-7">
+        <img src="/FlavorTrail/assets/settings-avatar-1f4d80b6.png" alt="avatar" class="pb-7 px-17">
+        <div class="d-flex flex-sm-column flex-sm-column-reverse justify-content-center">
+            <div class="me-2 me-sm-0">
+                <button type="button" class="btn btn-white fw-bold h6">刪除照片</button>
+            </div>
+            <div class="mb-sm-2">
+                <button type="button" class="btn btn-dark fw-bold h6">上傳新照片</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-sm-9">
+    <div class="row">
+        <div class="col">
+            <div>
+            <form action="" class="bg-white rounded-top-3 p-7">
+                <div class="row row-cols-sm-2">
+                    <div class="mb-7">
+                        <label class="form-label h6 fw-bold text-gray-700 pb-2" for="accountName">姓名</label>
+                        <input type="text" name="accountName" id="accountName" class="form-control py-2 px-5 border-gray-400 rounded-3 bg-white lh-account" placeholder="Ariel">
+                    </div>
+                    <div class="mb-7">
+                        <label class="form-label h6 fw-bold text-gray-700 pb-2" for="accountNickname">暱稱</label>
+                        <input type="text" name="accountNickname" id="accountNickname" class="form-control py-2 px-5 border-gray-400 rounded-3 bg-white lh-account" placeholder="王小羽">
+                    </div>
+                </div>
+                <div class="row row-cols-sm-2">
+                    <div class="mb-7">
+                        <label class="form-label h6 fw-bold text-gray-700 pb-2" for="accountEmail">電子郵件</label>
+                        <input type="email" name="accountEmail" id="accountEmail" class="form-control py-2 px-5 border-gray-400 rounded-3 bg-white lh-account" placeholder="abc123@gmail.com">
+                    </div>
+                    <div class="mb-7">
+                        <label class="form-label h6 fw-bold text-gray-700 pb-2" for="accountPhone">聯絡電話</label>
+                        <input type="phone" name="accountPhone" id="accountPhone" class="form-control py-2 px-5 border-gray-400 rounded-3 bg-white lh-account" placeholder="0912345678">
+                    </div>
+                </div>
+                <div class="mb-7">
+                    <label class="form-label h6 fw-bold text-gray-700 pb-2" for="accountCity">所在位置</label>
+                        <div class="d-flex gap-2">
+                            <div class="col-6 col-md-auto">
+                                <select class="form-select bg-white py-2 px-5 border-gray-400 rounded-3" id="accountCity" aria-label="Default select example">
+                                    <option disabled>請選擇城市</option>
+                                    <option value="台北市" selected>台北市</option>
+                                    <option value="新北市">新北市</option>
+                                    <option value="基隆市">基隆市</option>
+                                </select>
+                            </div>
+                            <div class="col-6 col-md-auto">
+                                <select class="form-select bg-white py-2 px-5 border-gray-400 rounded-3" id="accountDistrict" aria-label="Default select example">
+                                    <option disabled>請選擇地區</option>
+                                    <option value="信義區" selected>信義區</option>
+                                    <option value="中正區">中正區</option>
+                                    <option value="南港區">南港區</option>
+                                </select>
+                            </div>
+                        </div>
+                </div>
+                <div>
+                    <label class="form-label h6 fw-bold text-gray-700 pb-2" for="accountIntro">個人介紹</label>
+                    <textarea class="form-control py-2 px-5 border-gray-400 rounded-3 bg-white lh-account" name="accountIntro" id="accountIntro" rows="8">大家好,我是一個熱愛美食並喜歡與他人分享美食的人。
+無論是自己動手做的料理,還是發現的美味餐廳,我都樂於與朋友們分享這些美好的食物體驗。
+希望能夠通過分享美食,讓大家的生活更加豐富和快樂!😊</textarea>
+                </div>
+            </form>
+            <div class="border-top rounded-bottom-3 bg-white p-7">
+                <div class="d-flex justify-content-end">
+                    <div class="me-2">
+                        <button type="button" class="btn btn-white fw-bold h6" id="changePassword">變更密碼</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark fw-bold h6" id="updateSetting">更新個人設定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>            <div class="modal fade" id="passwordModalToggle" tabindex="-1" aria-labelledby="passwordModalToggleLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+        <div class="accountModal modal-content bg-white">
+            <div class="modal-header border-0 p-lg-7 py-7 px-4">
+                <h2 class="modal-title fs-1 lh-xs fw-bolder" id="passwordModalToggleLabel">變更密碼</h2>
+                <img src="/FlavorTrail/assets/x-7378c19a.svg" alt="" class="ms-auto p-2 pointer" data-bs-dismiss="modal"
+                    aria-label="Close">
+            </div>
+            <div class="modal-body py-7 px-4 px-lg-7">
+                <div class="mb-7">
+                    <label for="currentPassword" class="form-label text-gray-700 lh-xs fw-bold">當前密碼</label>
+                    <input type="password" class="form-control bg-white border-gray-400 px-5 py-2 lh-base"
+                        id="currentPassword" placeholder="請輸入原本的密碼">
+                </div>
+                <div class="mb-7">
+                    <label for="currentPassword" class="form-label text-gray-700 lh-xs fw-bold">新密碼</label>
+                    <input type="password" class="form-control bg-white border-gray-400 px-5 py-2 lh-base"
+                        id="currentPassword" placeholder="請輸入新密碼">
+                </div>
+                <div class="mb-7">
+                    <label for="currentPassword" class="form-label text-gray-700 lh-xs fw-bold">確認新密碼</label>
+                    <input type="password" class="form-control bg-white border-gray-400 px-5 py-2 lh-base"
+                        id="currentPassword" placeholder="請再次輸入新密碼">
+                </div>
+            </div>
+            <div class="modal-footer py-7 px-lg-7">
+                <button type="button" class="btn btn-white" data-bs-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">變更</button>
+            </div>
+        </div>
+    </div>
+</div>        </div>
+      </div>
 
-  <footer class="footer">
+      <footer class="footer">
     <div class="container">
         <div class="footer-header d-flex flex-lg-row flex-column-reverse mb-lg-19 mb-16">
             <a href="index.html" class="footer-logo">
@@ -672,7 +786,8 @@
         </div>
     </div>
 </div>
-</div>  
+</div>        
+        
 </body>
 
 </html>
